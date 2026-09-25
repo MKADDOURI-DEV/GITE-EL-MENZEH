@@ -4,6 +4,7 @@ import { fileURLToPath, URL } from 'node:url';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/smiyt-lrepo-dyalk/',   // <-- bddl b smiyt repo dyalk f GitHub
   plugins: [react()],
   resolve: {
     alias: {
