@@ -4,7 +4,8 @@ import { fileURLToPath, URL } from 'node:url';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/smiyt-lrepo-dyalk/',   // <-- bddl b smiyt repo dyalk f GitHub
+  // Vercel sert le site à la racine ; GitHub Pages sert sous /GITE-EL-MENZEH/
+  base: process.env.VERCEL ? '/' : '/GITE-EL-MENZEH/',
   plugins: [react()],
   resolve: {
     alias: {
