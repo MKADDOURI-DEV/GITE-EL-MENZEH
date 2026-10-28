@@ -14,6 +14,15 @@ const categories = [
   { emoji: "🍴", label: "Repas sur place", description: "Profitez de vos repas sans quitter le riad." },
 ];
 
+const dishes = [
+  { image: images.food3, title: "Tajine marocain", description: "Mijoté lentement avec épices et légumes, le plat emblématique du riad." },
+  { image: images.food5, title: "Tajine d'agneau", description: "Une viande fondante, relevée d'épices et préparée dans la tradition." },
+  { image: images.food4, title: "Couscous royal", description: "Semoule fine, légumes de saison et viandes, servi généreusement." },
+  { image: images.food6, title: "Couscous traditionnel", description: "Le grand classique du vendredi, partagé en famille." },
+  { image: images.food1, title: "Tajine de légumes", description: "Une version végétarienne savoureuse, aux légumes frais." },
+  { image: images.tea1, title: "Thé à la menthe", description: "Le geste d'accueil marocain par excellence, servi en théière." },
+];
+
 export default function RestaurationPage() {
   return (
     <>
@@ -63,6 +72,34 @@ export default function RestaurationPage() {
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Dishes */}
+      <section className="section-padding bg-cream-100">
+        <div className="container-luxury">
+          <Reveal>
+            <SectionTitle
+              eyebrow="À la carte"
+              title="Nos plats traditionnels marocains"
+              subtitle="Quelques-unes des spécialités préparées au riad."
+            />
+          </Reveal>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {dishes.map((d, i) => (
+              <Reveal key={d.title} delay={((i % 3) + 1) as 1 | 2 | 3}>
+                <article className="card-luxury group h-full">
+                  <div className="h-56 overflow-hidden">
+                    <img src={d.image} alt={d.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  </div>
+                  <div className="p-5">
+                    <h3 className="font-display text-lg font-semibold text-sand-900">{d.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-sand-600">{d.description}</p>
+                  </div>
+                </article>
+              </Reveal>
+            ))}
           </div>
         </div>
       </section>

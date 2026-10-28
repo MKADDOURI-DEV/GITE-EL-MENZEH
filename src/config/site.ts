@@ -24,6 +24,10 @@ export const siteConfig = {
   whatsappMessage:
     "Bonjour, je souhaite avoir plus d'informations concernant un séjour au Riad Gîte Menzeh.",
 
+  // Moteur de réservation Nozoul
+  bookingUrl:
+    "https://gite-el-menzeh.nozoul.ma/#/be/a8fe575f-8e0e-4c6b-ab2f-24727461a7f9/book",
+
   // Navigation
   nav: [
     { label: "Accueil", path: "/" },

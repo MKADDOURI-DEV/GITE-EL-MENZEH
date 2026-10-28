@@ -8,45 +8,24 @@ import { images } from "@/config/images";
 const accommodations = [
   {
     image: images.room1,
-    title: "Chambre — Confort & tradition",
+    title: "Chambre Single",
     description:
-      "Un espace chaleureux mêlant confort moderne et décor traditionnel marocain.",
-    amenities: ["Lit confortable", "Salle de bain", "Wi-Fi", "Climatisation"],
+      "Une chambre simple et paisible pour un voyageur seul, avec un décor traditionnel marocain et tout le confort essentiel.",
+    amenities: ["1 lit simple", "Salle de bain", "Wi-Fi", "Climatisation"],
   },
   {
     image: images.room2,
-    title: "Chambre — Ambiance marocaine",
+    title: "Chambre Double",
     description:
-      "Une chambre aux couleurs chaleureuses, pensée pour votre repos et votre tranquillité.",
-    amenities: ["Lit confortable", "Salle de bain", "Wi-Fi", "Espace repos"],
+      "Une chambre chaleureuse et lumineuse, idéale pour un séjour en couple ou entre amis.",
+    amenities: ["Grand lit ou 2 lits", "Salle de bain", "Wi-Fi", "Climatisation"],
   },
   {
     image: images.room3,
-    title: "Chambre — Décor traditionnel",
+    title: "Salon",
     description:
-      "Une chambre au décor soigné, avec des matériaux et textures inspirés du patrimoine marocain.",
-    amenities: ["Lit confortable", "Salle de bain", "Wi-Fi", "Climatisation"],
-  },
-  {
-    image: images.room4,
-    title: "Chambre — Tons chaleureux",
-    description:
-      "Une chambre aux tons orangés et au bois ouvragé, pour un séjour plein de caractère.",
-    amenities: ["Lit confortable", "Salle de bain", "Wi-Fi", "Espace repos"],
-  },
-  {
-    image: images.room7,
-    title: "Chambre — Lit confortable",
-    description:
-      "Un lit confortable et un cadre reposant pour des nuits paisibles.",
-    amenities: ["Lit confortable", "Salle de bain", "Wi-Fi", "Climatisation"],
-  },
-  {
-    image: images.room8,
-    title: "Hébergement — Informations sur demande",
-    description:
-      "Plusieurs types d'hébergement sont disponibles. Contactez-nous pour connaître les disponibilités et les options.",
-    amenities: ["Lit confortable", "Salle de bain", "Wi-Fi", "Espace repos"],
+      "Un espace spacieux avec coin salon, pensé pour les familles et les groupes qui souhaitent se retrouver.",
+    amenities: ["Coin salon", "Salle de bain", "Wi-Fi", "Espace repos"],
   },
 ];
 
@@ -66,7 +45,7 @@ export default function HebergementPage() {
             <SectionTitle
               eyebrow="Hébergement"
               title="Séjournez dans un cadre confortable"
-              subtitle="Le Riad Gîte Menzeh propose différents types d'hébergement, tous pensés pour votre bien-être. Pour plus d'informations sur les capacités et disponibilités, contactez-nous directement."
+              subtitle="Le Riad Gîte Menzeh propose trois types d'hébergement : chambre single, chambre double et salon. Vérifiez les disponibilités et réservez en ligne."
             />
           </Reveal>
 
@@ -87,9 +66,8 @@ export default function HebergementPage() {
           <Reveal className="mt-10">
             <div className="rounded-2xl bg-cream-100 p-6 text-center ring-1 ring-sand-200/60">
               <p className="text-sm text-sand-600">
-                Les informations détaillées (capacités, prix, disponibilités)
-                sont communiquées sur demande. Contactez-nous pour un
-                accompagnement personnalisé.
+                Les tarifs et disponibilités s'affichent directement dans le
+                moteur de réservation en ligne.
               </p>
             </div>
           </Reveal>

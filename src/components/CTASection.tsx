@@ -17,7 +17,7 @@ export default function CTASection({
   title = "Prêt à vivre l'expérience ?",
   subtitle = "Contactez-nous pour réserver votre séjour au Riad Gîte Menzeh.",
   primaryLabel = "Réserver votre séjour",
-  primaryTo = "/contact",
+  primaryTo = "/contact#reservation",
   secondaryLabel = "Nous contacter",
   secondaryTo = "/contact",
   image = images.riadCourtyard,

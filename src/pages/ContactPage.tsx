@@ -3,7 +3,7 @@ import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
 import SectionTitle from "@/components/SectionTitle";
 import ContactForm from "@/components/ContactForm";
-import ReservationForm from "@/components/ReservationForm";
+import BookingEngine from "@/components/BookingEngine";
 import MapSection from "@/components/MapSection";
 import { siteConfig } from "@/config/site";
 import { images } from "@/config/images";
@@ -149,18 +149,18 @@ export default function ContactPage() {
       </section>
 
       {/* Reservation */}
-      <section className="section-padding bg-cream-100">
+      <section id="reservation" className="section-padding bg-cream-100">
         <div className="container-luxury">
           <Reveal>
             <SectionTitle
               eyebrow="Réservation"
-              title="Demander une réservation"
-              subtitle="Remplissez ce formulaire pour faire une demande de réservation. Nous vous contacterons pour confirmer."
+              title="Réservez en ligne"
+              subtitle="Choisissez vos dates et votre hébergement, puis confirmez votre réservation en quelques clics."
             />
           </Reveal>
           <Reveal delay={1} className="mt-10">
-            <div className="mx-auto max-w-2xl rounded-3xl bg-cream-50 p-6 shadow-soft ring-1 ring-sand-200/60 sm:p-8">
-              <ReservationForm />
+            <div className="mx-auto max-w-5xl rounded-3xl bg-cream-50 p-4 shadow-soft ring-1 ring-sand-200/60 sm:p-6">
+              <BookingEngine />
             </div>
           </Reveal>
         </div>
