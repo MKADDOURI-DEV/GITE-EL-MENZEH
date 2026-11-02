@@ -74,7 +74,7 @@ export default function Header() {
                     scrolled ? "text-sand-500" : "text-cream-200/70"
                   }`}
                 >
-                  Moulay Abdellah
+                  Moulay Idriss Zerhoun
                 </span>
               </div>
             </Link>

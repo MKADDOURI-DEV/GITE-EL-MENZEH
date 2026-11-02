@@ -66,6 +66,12 @@ export const images = {
   landscape3: px("https://images.pexels.com/photos/37684102/pexels-photo-37684102.jpeg"),
   landscape4: px("https://images.pexels.com/photos/30208105/pexels-photo-30208105.jpeg"),
 
+  // Moulay Idriss Zerhoun (placeholders libres de droits Pexels — à remplacer
+  // par de vraies photos de Moulay Idriss : copier l'URL Pexels/Unsplash ici)
+  moulayIdriss1: px("https://images.pexels.com/photos/18742776/pexels-photo-18742776.jpeg"),
+  moulayIdriss2: px("https://images.pexels.com/photos/37684085/pexels-photo-37684085.jpeg"),
+  moulayIdriss3: px("https://images.pexels.com/photos/5208318/pexels-photo-5208318.jpeg"),
+
   // Architecture / détails
   arch1: px("https://images.pexels.com/photos/5208318/pexels-photo-5208318.jpeg"),
   arch2: px("https://images.pexels.com/photos/35036533/pexels-photo-35036533.jpeg"),

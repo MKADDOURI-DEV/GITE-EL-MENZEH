@@ -51,7 +51,7 @@ const experienceCards = [
   {
     icon: MapPin,
     title: "Emplacement",
-    description: "Découvrez Moulay Abdellah et ses environs.",
+    description: "Découvrez Moulay Idriss Zerhoun et ses environs.",
   },
 ];
 
@@ -89,7 +89,7 @@ export default function HomePage() {
               </h2>
               <p className="mt-5 text-base leading-relaxed text-sand-600">
                 Le Riad Gîte Menzeh vous accueille dans un cadre authentique et
-                chaleureux à Moulay Abdellah. Pensé pour offrir une expérience
+                chaleureux à Moulay Idriss Zerhoun. Pensé pour offrir une expérience
                 confortable et conviviale, le riad propose des espaces
                 d'hébergement ainsi qu'un service de restauration sur place.
               </p>

@@ -25,7 +25,7 @@ export default function Hero() {
           <div className="mb-6 flex items-center justify-center gap-3 animate-fade-down">
             <span className="h-px w-12 bg-terracotta-300/60" />
             <span className="text-xs font-semibold uppercase tracking-[0.25em] text-terracotta-200">
-              Moulay Abdellah, Maroc
+              Moulay Idriss Zerhoun, Maroc
             </span>
             <span className="h-px w-12 bg-terracotta-300/60" />
           </div>

@@ -20,7 +20,7 @@ export default function MapSection() {
               {siteConfig.location}
             </p>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-sand-600">
-              Le Riad Gîte Menzeh est situé à Moulay Abdellah. Pour obtenir
+              Le Riad Gîte Menzeh est situé à Moulay Idriss Zerhoun. Pour obtenir
               l'itinéraire exact, contactez-nous ou utilisez le bouton
               ci-dessous.
             </p>

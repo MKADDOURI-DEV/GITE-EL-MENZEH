@@ -26,12 +26,12 @@ export default function Footer() {
                   {siteConfig.name}
                 </h3>
                 <p className="mt-0.5 text-xs uppercase tracking-[0.18em] text-cream-200/60">
-                  Moulay Abdellah
+                  Moulay Idriss Zerhoun
                 </p>
               </div>
             </div>
             <p className="mt-5 max-w-md text-sm leading-relaxed text-cream-200/70">
-              Votre adresse d'hospitalité à Moulay Abdellah. Un lieu chaleureux
+              Votre adresse d'hospitalité à Moulay Idriss Zerhoun. Un lieu chaleureux
               où l'hospitalité marocaine, le confort et la gastronomie se
               rencontrent.
             </p>

@@ -61,11 +61,11 @@ export default function LeRiadPage() {
                 Notre histoire
               </p>
               <h2 className="text-section font-medium text-sand-900 text-balance">
-                Un riad authentique à Moulay Abdellah
+                Un riad authentique à Moulay Idriss Zerhoun
               </h2>
               <p className="mt-5 text-base leading-relaxed text-sand-600">
                 Le Riad Gîte Menzeh est un établissement d'hébergement et de
-                restauration situé à Moulay Abdellah. Il offre à ses visiteurs
+                restauration situé à Moulay Idriss Zerhoun. Il offre à ses visiteurs
                 un cadre authentique, chaleureux et confortable, dans la pure
                 tradition de l'hospitalité marocaine.
               </p>
@@ -83,8 +83,64 @@ export default function LeRiadPage() {
         </div>
       </section>
 
-      {/* Features */}
+      {/* Moulay Idriss Zerhoun */}
       <section className="section-padding bg-cream-100">
+        <div className="container-luxury">
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+            <Reveal>
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-600">
+                Notre ville
+              </p>
+              <h2 className="text-section font-medium text-sand-900 text-balance">
+                Moulay Idriss Zerhoun, la ville sainte
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-sand-600">
+                Étagée sur deux collines au pied du mont Zerhoun, Moulay Idriss
+                abrite le mausolée d'Idris Ier, fondateur de la dynastie
+                idrisside. C'est l'un des lieux de pèlerinage les plus
+                importants du Maroc, avec son moussem chaque année en août.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-sand-600">
+                Ruelles blanches, place centrale animée et minaret cylindrique
+                aux tuiles vertes, unique au Maroc : tout se découvre à pied
+                depuis le riad. Les ruines romaines de Volubilis sont à
+                quelques kilomètres.
+              </p>
+            </Reveal>
+            <Reveal delay={1}>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="col-span-2 overflow-hidden rounded-3xl shadow-large">
+                  <img
+                    src={images.moulayIdriss1}
+                    alt="Vue de Moulay Idriss Zerhoun"
+                    className="aspect-[16/9] w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="overflow-hidden rounded-3xl shadow-medium">
+                  <img
+                    src={images.moulayIdriss2}
+                    alt="Village et collines de Moulay Idriss"
+                    className="aspect-square w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="overflow-hidden rounded-3xl shadow-medium">
+                  <img
+                    src={images.moulayIdriss3}
+                    alt="Architecture traditionnelle de Moulay Idriss"
+                    className="aspect-square w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="section-padding bg-cream-50">
         <div className="container-luxury">
           <Reveal>
             <SectionTitle
