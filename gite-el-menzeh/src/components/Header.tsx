@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { siteConfig } from "@/config/site";
+import { images } from "@/config/images";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -46,21 +47,13 @@ export default function Header() {
           >
             {/* Logo */}
             <Link to="/" className="group flex items-center gap-3">
-              <div
-                className={`flex h-10 w-10 items-center justify-center rounded-full border transition-all duration-300 ${
-                  scrolled
-                    ? "border-terracotta-500 bg-terracotta-50"
-                    : "border-cream-100/40 bg-cream-50/10"
+              <img
+                src={images.logoEmblem}
+                alt="Logo Gîte Elmenzeh"
+                className={`w-auto transition-all duration-300 ${
+                  scrolled ? "h-11" : "h-14 lg:h-16 drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]"
                 }`}
-              >
-                <span
-                  className={`font-display text-lg font-bold transition-colors duration-300 ${
-                    scrolled ? "text-terracotta-600" : "text-cream-50"
-                  }`}
-                >
-                  M
-                </span>
-              </div>
+              />
               <div className="flex flex-col leading-none">
                 <span
                   className={`font-display text-base font-semibold tracking-wide transition-colors duration-300 ${

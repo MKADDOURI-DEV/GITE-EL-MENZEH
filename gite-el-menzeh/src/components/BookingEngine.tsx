@@ -205,7 +205,12 @@ function Counter({
 /* ------------------------------------------------------------------ */
 /*  Moteur de réservation                                               */
 /* ------------------------------------------------------------------ */
-export default function BookingEngine() {
+type BookingEngineProps = {
+  /** Version barre (page d'accueil) : sans les encadrés d'information */
+  compact?: boolean;
+};
+
+export default function BookingEngine({ compact = false }: BookingEngineProps) {
   const { booking } = siteConfig;
   const today = startOfDay(new Date());
 
@@ -491,6 +496,7 @@ export default function BookingEngine() {
       )}
 
       {/* Informations */}
+      {!compact && (
       <div className="mt-6 grid gap-3 text-sm sm:grid-cols-2">
         <p className="rounded-xl bg-cream-100 px-4 py-3 text-sand-600 ring-1 ring-sand-200/60">
           Chambres <strong className="text-sand-800">single, double et triple</strong> :
@@ -515,6 +521,7 @@ export default function BookingEngine() {
           </span>
         </p>
       </div>
+      )}
     </div>
   );
 }

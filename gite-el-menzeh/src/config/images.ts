@@ -13,6 +13,11 @@ const local = (file: string) => `${import.meta.env.BASE_URL}images/${file}`;
 
 export const images = {
   hero: local("patio.jpg"),
+  heroVideo: `${import.meta.env.BASE_URL}videos/hero.mp4`,
+
+  // Logo
+  logoEmblem: local("logo-embleme.png"),
+  logoFull: local("logo-gite-elmenzeh.png"),
   heroAlt: local("salle-a-manger-2.jpg"),
 
   // Le Riad
@@ -28,9 +33,10 @@ export const images = {
   view: local("vue-fenetre.jpg"),
 
   // Chambres
-  // Single et Double : en attente des photos du Drive (fichiers > 10 Mo)
-  roomSingle: px("https://images.pexels.com/photos/34940612/pexels-photo-34940612.jpeg"),
-  roomDouble: px("https://images.pexels.com/photos/15531322/pexels-photo-15531322.jpeg"),
+  // Single et Double : images extraites de la vidéo de présentation
+  roomSingle: local("chambre-single.jpg"),
+  roomDouble: local("chambre-double.jpg"),
+  roomTwin: local("chambre-twin.jpg"),
   roomTriple: local("chambre-triple.jpg"),
   roomFamily: local("chambre-familiale.jpg"),
   room1: local("chambre-triple.jpg"),
@@ -90,6 +96,9 @@ export const galleryImages: GalleryImage[] = [
   { src: images.salonBeige4, alt: "Salon beige, vue panoramique", category: "Salons" },
 
   // Chambres
+  { src: images.roomDouble, alt: "Chambre double", category: "Chambres" },
+  { src: images.roomTwin, alt: "Chambre à deux lits", category: "Chambres" },
+  { src: images.roomSingle, alt: "Chambre single", category: "Chambres" },
   { src: images.roomTriple, alt: "Chambre triple", category: "Chambres" },
   { src: images.roomFamily, alt: "Chambre familiale", category: "Chambres" },
 

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail, Instagram, Facebook, MessageCircle } from "lucide-react";
 import { siteConfig } from "@/config/site";
+import { images } from "@/config/images";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -15,21 +16,12 @@ export default function Footer() {
         <div className="grid gap-12 py-16 lg:grid-cols-4 lg:py-20">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full border border-terracotta-400/50 bg-terracotta-500/10">
-                <span className="font-display text-xl font-bold text-terracotta-300">
-                  M
-                </span>
-              </div>
-              <div>
-                <h3 className="font-display text-xl font-semibold text-cream-50">
-                  {siteConfig.name}
-                </h3>
-                <p className="mt-0.5 text-xs uppercase tracking-[0.18em] text-cream-200/60">
-                  Moulay Idriss Zerhoun
-                </p>
-              </div>
-            </div>
+            <img
+              src={images.logoFull}
+              alt={`Logo ${siteConfig.name}`}
+              className="h-36 w-auto"
+              loading="lazy"
+            />
             <p className="mt-5 max-w-md text-sm leading-relaxed text-cream-200/70">
               Votre adresse d'hospitalité à Moulay Idriss Zerhoun. Un lieu chaleureux
               où l'hospitalité marocaine, le confort et la gastronomie se
