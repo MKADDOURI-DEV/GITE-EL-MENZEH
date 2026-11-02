@@ -8,7 +8,6 @@ import LeRiadPage from "@/pages/LeRiadPage";
 import HebergementPage from "@/pages/HebergementPage";
 import RestaurationPage from "@/pages/RestaurationPage";
 import GaleriePage from "@/pages/GaleriePage";
-import ServicesPage from "@/pages/ServicesPage";
 import ContactPage from "@/pages/ContactPage";
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
             <Route path="/hebergement" element={<HebergementPage />} />
             <Route path="/restauration" element={<RestaurationPage />} />
             <Route path="/galerie" element={<GaleriePage />} />
-            <Route path="/services" element={<ServicesPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
