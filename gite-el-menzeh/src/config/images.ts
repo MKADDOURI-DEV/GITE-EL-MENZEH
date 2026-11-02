@@ -60,6 +60,12 @@ export const images = {
   restaurant2: local("salle-a-manger-3.jpg"),
   restaurant3: local("salle-a-manger-2.jpg"),
 
+  // Moulay Idriss Zerhoun (placeholders Pexels libres de droits — à remplacer
+  // par de vraies photos de Moulay Idriss : copier l'URL Pexels/Unsplash ici)
+  moulayIdriss1: px("https://images.pexels.com/photos/18742776/pexels-photo-18742776.jpeg"),
+  moulayIdriss2: px("https://images.pexels.com/photos/37684085/pexels-photo-37684085.jpeg"),
+  moulayIdriss3: px("https://images.pexels.com/photos/5208318/pexels-photo-5208318.jpeg"),
+
   // Cuisine (photos d'illustration)
   food1: px("https://images.pexels.com/photos/36984667/pexels-photo-36984667.jpeg"),
   food3: px("https://images.pexels.com/photos/998244/pexels-photo-998244.jpeg"),
