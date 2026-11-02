@@ -45,7 +45,6 @@ export const siteConfig = {
     { label: "Hébergement", path: "/hebergement" },
     { label: "Restauration", path: "/restauration" },
     { label: "Galerie", path: "/galerie" },
-    { label: "Services", path: "/services" },
     { label: "Contact", path: "/contact" },
   ],
 };
