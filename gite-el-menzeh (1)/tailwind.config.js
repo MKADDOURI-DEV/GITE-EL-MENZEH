@@ -1,0 +1,131 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        sand: {
+          50: '#faf7f2',
+          100: '#f5ede0',
+          200: '#e8d8c0',
+          300: '#d9c2a0',
+          400: '#c9a87a',
+          500: '#b88d54',
+          600: '#a07440',
+          700: '#825c34',
+          800: '#6a4a2c',
+          900: '#553b25',
+          950: '#3a2818',
+        },
+        terracotta: {
+          50: '#fdf5f2',
+          100: '#fae8e1',
+          200: '#f4d0c2',
+          300: '#eca99a',
+          400: '#e07a63',
+          500: '#cf5a3e',
+          600: '#bb4225',
+          700: '#9c331e',
+          800: '#7d2e1f',
+          900: '#652a1d',
+          950: '#36130c',
+        },
+        moroccan: {
+          green: {
+            50: '#f2f7f3',
+            100: '#e0ece3',
+            200: '#c2d8ca',
+            300: '#97bda4',
+            400: '#6a9c7c',
+            500: '#4a7e5e',
+            600: '#38654a',
+            700: '#2d513b',
+            800: '#264130',
+            900: '#1f3528',
+            950: '#0f1d15',
+          },
+          red: {
+            50: '#fef3f2',
+            100: '#fde4e1',
+            200: '#fbcec8',
+            300: '#f7aaa0',
+            400: '#f17a6a',
+            500: '#e5533f',
+            600: '#d23a26',
+            700: '#b02d1d',
+            800: '#92281c',
+            900: '#78271d',
+            950: '#3e110b',
+          },
+          blue: '#2a6a8e',
+        },
+        cream: {
+          50: '#fefdfb',
+          100: '#fdfaf5',
+          200: '#faf4ea',
+          300: '#f5ead8',
+          400: '#eeddc0',
+          500: '#e3c99e',
+        },
+      },
+      fontFamily: {
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+      },
+      fontSize: {
+        'hero': ['clamp(2.5rem, 6vw, 5.5rem)', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
+        'section': ['clamp(2rem, 4vw, 3.5rem)', { lineHeight: '1.1', letterSpacing: '-0.01em' }],
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.8s ease-out forwards',
+        'fade-up': 'fadeUp 0.8s ease-out forwards',
+        'fade-down': 'fadeDown 0.8s ease-out forwards',
+        'scale-in': 'scaleIn 0.8s ease-out forwards',
+        'slide-right': 'slideRight 0.8s ease-out forwards',
+        'slide-left': 'slideLeft 0.8s ease-out forwards',
+        'shimmer': 'shimmer 3s ease-in-out infinite',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(30px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeDown: {
+          '0%': { opacity: '0', transform: 'translateY(-30px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        scaleIn: {
+          '0%': { opacity: '0', transform: 'scale(0.95)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
+        },
+        slideRight: {
+          '0%': { opacity: '0', transform: 'translateX(-30px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        slideLeft: {
+          '0%': { opacity: '0', transform: 'translateX(30px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        shimmer: {
+          '0%, 100%': { opacity: '0.5' },
+          '50%': { opacity: '1' },
+        },
+      },
+      boxShadow: {
+        'soft': '0 4px 24px -4px rgba(85, 59, 37, 0.12)',
+        'medium': '0 8px 32px -8px rgba(85, 59, 37, 0.18)',
+        'large': '0 16px 48px -12px rgba(85, 59, 37, 0.22)',
+        'warm': '0 8px 32px -8px rgba(187, 66, 37, 0.15)',
+      },
+      backgroundImage: {
+        'pattern': "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23b88d54' fill-opacity='0.05'%3E%3Cpath d='M30 30c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20-20-8.954-20-20zm-30 0c0-11.046 8.954-20 20-20s20 8.954 20 20-8.954 20-20 20S0 41.046 0 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
+      },
+    },
+  },
+  plugins: [],
+};
