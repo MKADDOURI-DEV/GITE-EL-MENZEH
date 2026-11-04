@@ -8,7 +8,7 @@ export const siteConfig = {
   address: "Aïn Rjal, Rue L N°72, 50000 Moulay Idriss Zerhoun, Maroc",
 
   // Contact — remplacer par les informations réelles
-  phone: "06 68 20 93 30",
+  phone: "06 28 53 89 12",
   whatsapp: "",
   email: "",
 
