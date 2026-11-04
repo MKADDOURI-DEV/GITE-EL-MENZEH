@@ -34,8 +34,8 @@ export const images = {
 
   // Chambres
   // Single et Double : images extraites de la vidéo de présentation
-  roomSingle: local("chambre-single.jpg"),
-  roomDouble: local("chambre-double.jpg"),
+  roomSingle: local("chambre-double.jpg"),
+  roomDouble: local("chambre-single.jpg"),
   roomTwin: local("chambre-twin.jpg"),
   roomTriple: local("chambre-triple.jpg"),
   roomFamily: local("chambre-familiale.jpg"),
